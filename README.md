@@ -1,5 +1,10 @@
 # React + Vite
 
+Aplicacion Hecha en ReactJs consumiendo API de Rick And Morty 
+agregandole diseño, paginacion y metodo de busca por nombre.
+
+PREVIEW: https://dragonballrap.github.io/ApiRickAndMortyReactJs/
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
