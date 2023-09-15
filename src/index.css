@@ -1,0 +1,179 @@
+#root {
+  margin: 0 auto;
+}
+
+.contenedorSearch {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 5rem;
+
+}
+
+.imagenSearch {
+  height: 2rem;
+  margin-right: 2rem;
+}
+
+.contenedorSearch p {
+  font-weight: bold;
+
+}
+
+.accordion {}
+
+.buscadosSearch:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.titulosss {
+  position: relative;
+  height: 10rem;
+  padding-top: 25rem;
+}
+
+.title {
+  position: absolute;
+  bottom: 0.8em;
+  width: 100%;
+  text-align: center;
+  font-family: 'Get Schwifty';
+  font-size: 10em;
+  color: #08BAE3;
+  z-index: 50;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+
+  span {
+    font-size: 0.5em;
+  }
+}
+
+.title.middle {
+  -webkit-text-stroke: 0.1em #FFF765;
+  z-index: 49;
+}
+
+.title.bottom {
+  -webkit-text-stroke: 0.4em black;
+  z-index: 48;
+}
+
+.bgMorty {
+
+  background-color: #66BA4F;
+  box-shadow: 0px 0px 40px 10px #448C3F;
+
+  background:
+    radial-gradient(circle at 77% 80%, #FDFEB4 2.5%, transparent 2.5%),
+    radial-gradient(circle at 75% 83%, #FDFEB4 2%, transparent 2%),
+    radial-gradient(circle at 79% 83%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 45% 13%, #FFFFD5 1.5%, transparent 1.5%),
+    radial-gradient(circle at 42% 13%, #FFFFD5 2%, transparent 2%),
+    radial-gradient(circle at 38% 14%, #FFFFD5 1.5%, transparent 1.5%),
+    radial-gradient(circle at 20% 24%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 21% 23%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 51% 13%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 81% 33%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 85% 36%, #FDFEB4 2%, transparent 2%),
+    radial-gradient(circle at 21% 46%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 20% 51%, #FDFEB4 2%, transparent 2%),
+    radial-gradient(circle at 53% 51%, transparent 64%, #43A93E 64%),
+    radial-gradient(circle at 47% 59%, transparent 64%, #43843E 64%),
+    radial-gradient(circle at 47% 60%, transparent 59%, #1A9042 59%),
+    radial-gradient(circle at 50% 59%, transparent 55%, #1B863C 55%),
+    radial-gradient(circle at 45% 60%, transparent 55%, #399C49 55%),
+    radial-gradient(circle at 47% 60%, transparent 46%, #1A9042 46%),
+    radial-gradient(circle at 46% 55%, transparent 43%, #75B03B 43%),
+    radial-gradient(circle at 36% 55%, transparent 43%, #A9CB48 43%),
+    radial-gradient(circle at 50% 60%, transparent 40%, #66BA4F 40%),
+    radial-gradient(circle at 50% 53%, transparent 40%, #E5E051 37%),
+    radial-gradient(circle at 30% 48%, transparent 40%, #EAF157 37%),
+    radial-gradient(circle at 57% 69%, transparent 40%, #EAF157 40%),
+    radial-gradient(circle at 40% 88%, transparent 40%, #E9E072 37%),
+    radial-gradient(circle at 67% 54%, transparent 40%, #FAEB7B 37%),
+    radial-gradient(circle at 49% 35%, transparent 40%, #FFF8C5 37%),
+    radial-gradient(circle at 79% 59%, transparent 40%, #FFFE9C 37%),
+    radial-gradient(circle at 50% 50%, #FDFEB4 100%, #FDFEB4 100%);
+}
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
+
+.portalBG {
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  left: 1rem;
+  z-index: -1;
+
+
+}
+
+p,
+h3 {
+  font-weight: bold;
+}
+
+.contenedor-imagen {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  line-height: 50px;
+
+}
+
+.contenedor-imagen h5 h3 {
+  font-weight: bold;
+}
+
+.imagenCharacter {
+  filter: grayscale(1);
+}
+
+.imagenCharacter:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+
+  transition: scale 3s ease;
+}
+
+.TextoImagen {
+  height:0;
+  width: 0;
+  overflow: hidden;
+  padding: 1rem;
+  opacity: 0;
+  background-color: #66ba4f86;
+  border-radius: 30%;
+  position: absolute;
+  top: 0rem;
+  left: 7.5rem;
+  z-index: 10;
+  transition: opacity 2s ease;
+}
+
+.contendedor_seguir {
+  
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.imagenCharacter:hover +
+ .TextoImagen{
+  height: 15.5rem;
+  width: 15.9rem;
+  opacity: 1;
+}
+.TextoImagen:hover{
+  height: 15.5rem;
+  width: 15.9rem;
+  opacity: 1;
+}
+
